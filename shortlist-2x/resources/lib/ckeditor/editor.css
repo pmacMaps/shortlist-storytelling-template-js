@@ -1,0 +1,245 @@
+/*
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('../../_resources/font/OpenSans-Regular-webfont.eot');
+	src: url('../../_resources/font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../../_resources/font/OpenSans-Regular-webfont.woff2') format('woff2'),
+		url('../../_resources/font/OpenSans-Regular-webfont.woff') format('woff'),
+		url('../../_resources/font/OpenSans-Regular-webfont.ttf') format('truetype'),
+		url('../../_resources/font/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	unicode-range: U+0370-03FF, U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+	font-family: 'open_sanssemibold';
+	src: url('../../_resources/font/OpenSans-Semibold-webfont.eot');
+	src: url('../../_resources/font/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../../_resources/font/OpenSans-Semibold-webfont.woff2') format('woff2'),
+		url('../../_resources/font/OpenSans-Semibold-webfont.woff') format('woff'),
+		url('../../_resources/font/OpenSans-Semibold-webfont.ttf') format('truetype'),
+		url('../../_resources/font/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	unicode-range: U+0370-03FF, U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/*
+ * Open Sans extended (cyrillic, cyrillic-ext, latin-ext, greek-ext, vietnamese)
+ */
+
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('../../_resources/font/opensans-all/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../../_resources/font/opensans-all/OpenSans-Regular-webfont.woff2') format('woff2'),
+		url('../../_resources/font/opensans-all/OpenSans-Regular-webfont.woff') format('woff'),
+		url('../../_resources/font/opensans-all/OpenSans-Regular-webfont.svg#open_sanssemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'open_sanssemibold';
+	src: url('../../_resources/font/opensans-all/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../../_resources/font/opensans-all/OpenSans-Semibold-webfont.woff2') format('woff2'),
+		url('../../_resources/font/opensans-all/OpenSans-Semibold-webfont.woff') format('woff'),
+		url('../../_resources/font/opensans-all/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+html {
+	font-size: 14px; /* match main app's body font size */
+}
+
+body
+{
+	/* Font */
+	font-family: 'open_sansregular', sans-serif;
+	font-size: 0.9em; /* match main app's textEditorContent font size (in Common.css)
+
+	/* Text color */
+	/*color: #333;*/
+	color: #000;
+
+	/* Remove the background color to make it transparent */
+	background-color: #fff;
+
+	margin: 20px;
+}
+
+/*
+body.error-no-content {
+	color: #F00 !important;
+}
+*/
+
+strong {
+	font-family: 'open_sanssemibold', sans-serif;
+	font-weight: bold;
+}
+
+a
+{
+	font-weight: bold;
+	color: #555;
+}
+
+ul {
+	margin: inherit;
+	padding: 10px 40px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 0.5em 0;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+hr
+{
+	border: none;
+	border-top: 1px solid #ccc;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+img.right
+{
+	border: 1px solid #ccc;
+	float: right;
+	margin-left: 15px;
+	padding: 5px;
+}
+
+img.left
+{
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+}
+
+.marker
+{
+	background-color: Yellow;
+}
+
+span[lang]
+{
+   font-style: italic;
+}
+
+figure
+{
+	margin: 15px 0;
+	display: block; /* For IE8 */
+	/* Storymaps */
+	/*display: inline-block;*/
+	max-width: 100%;
+}
+
+/* Storymaps */
+figure img {
+	max-width: 100%;
+}
+
+/* Storymaps */
+img {
+	max-width: 100%;
+}
+
+.cke_image_nocaption {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* this is default figcaption color. if theme-major=black,
+ * we add a #caption-style inline style tag to the editor head
+ * in InlineEditor.js */
+figure figcaption
+{
+	text-align: left;
+	display: block; /* For IE8 */
+	font-size: 0.85em;
+	color: #5F5F5F;
+	margin-top: 6px;
+}
+
+/*
+ * Storymaps
+ * Also in storymaps/tpl/ui/Common.css
+ */
+
+a[data-storymaps] {
+ 	border-bottom: 1px dashed #555;
+	text-decoration: none;
+	cursor: default;
+}
+
+/*
+ * Iframe style
+ */
+
+iframe {
+	border: none;
+}
+
+.image-container > span.cke_widget_wrapper:after,
+.cke_widget_element > span.cke_image_resizer_wrapper:after,
+.iframe-container:after {
+	position: absolute;
+	top: -20px;
+	width: 40px;
+	height: 40px;
+	background-image: url('../../_resources/icons/ckeditor/builder-edit-border.png');
+	content: ' ';
+	background-size: 40px auto;
+	right: -20px;
+	cursor: pointer;
+}
+
+.image-container > span.cke_widget_wrapper:hover:after,
+.cke_widget_element > span.cke_image_resizer_wrapper:hover:after,
+.iframe-container:hover:after {
+	background-position: 0 -40px;
+}
+
+.iframe-container {
+	display: inline;
+	position: relative;
+}
+
+.iframe-container > iframe {
+	/* prevent bad alignement of edit button */
+	max-width: 99%;
+}
+
+.iframe-container:after {
+	top: auto;
+	margin-top: -20px;
+}
