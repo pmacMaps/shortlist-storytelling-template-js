@@ -64,6 +64,14 @@
 				pathJSAPI: 'https://js.arcgis.com/3.25/'
 			};
 		</script>
+        
+        <!-- Add custom stylesheets -->
+        <!-- Custom styles -->
+        <!-- Legend -->
+        <link rel="stylesheet" type="text/css" href="app/jquery.shortlist-legend.css" />
+        <!-- Last Data Update -->
+        <link rel="stylesheet" type="text/css" href="app/data-update.css" /> 
+        
 		<noscript>
 			<div style="position: fixed; top: 0px; left: 0px; z-index: 3000; height: 100%; width: 100%; background-color: #FFFFFF">
 				<p style="margin: 50px">This story map requires JavaScript, but running JavaScript is not currently allowed by your web browser. If you wish to view this story, please enable JavaScript in this browser or try a different browser.</p>
@@ -142,6 +150,14 @@
 			<div id="mainStagePanel">
 
 				<div id="map">
+                    <!-- Custom Legend -->
+                    <!-- Legend Button -->
+                    <div id="customLegendBtn">
+                        <h3>Legend</h3>
+                    </div>
+                    <!-- Legend Container -->
+                    <div id="customLegend"></div>
+                    <!-- end Custom Legend -->
 					<div id="search"></div>
 					<div id="viewer-search"></div>
 					<!-- For some reason this can't be appended in its own template as part of its own component

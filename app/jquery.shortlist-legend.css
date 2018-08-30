@@ -30,6 +30,7 @@
    margin: 0;
    padding: 15px;
    cursor: auto;
+    overflow-y: scroll;
 }
 
 #customLegend ul {
