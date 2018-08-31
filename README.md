@@ -1,6 +1,6 @@
 # Esri Shortlist Story Map Customizations
 
-This fork of the [Esri Shortlist Story Map](https://github.com/Esri/shortlist-storytelling-template-js) provides the code to various customizations I have made in live deployments of the application.  You can view **[demos]**(https://pnmcartodesign.com/shortlist-storytelling-template-js/) for both the 2.x and 1.4.9 versions.  
+This fork of the [Esri Shortlist Story Map](https://github.com/Esri/shortlist-storytelling-template-js) provides the code to various customizations I have made in live deployments of the application.  You can view **[demos](https://pnmcartodesign.com/shortlist-storytelling-template-js/)** for both the 2.x and 1.4.9 versions.  
 
 The **Master Branch** contains the customizations for version **_2.7.0_**, while the [**ver-1.4.9 Branch**](https://github.com/pmacMaps/shortlist-storytelling-template-js/tree/ver-1.4.9) contains the customizations for version **_1.4.9_** of the Shortlist StoryMap.  The application underwent a major re-write at Version _2.x_.
 
