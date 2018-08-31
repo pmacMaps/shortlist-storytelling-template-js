@@ -121,7 +121,7 @@ define(["dojo/topic"], function(topic) {
 
         // place last data update text on header if screen size changes to above breakpoint    
         $(window).resize(function() {
-            if (viewportWidth > 768) {
+            if ($(window).width() > 768) {
                 ccpaHeader.append(dataUpdateText);
             }
         });        
