@@ -102,6 +102,14 @@ loadCSS(app.pathJSAPI + "esri/css/esri.css", true);
 loadCSS(app.pathJSAPI + "dijit/themes/claro/claro.css", true);
 //loadCSS(app.pathJSAPI + "esri/themes/calcite/dijit/calcite.css", true);
 
+// Load custom stylesheets
+// toggable legend
+loadCSS("app/jquery.shortlist-legend.css");
+// last data update
+loadCSS("app/data-update.css");
+// generic custom styles
+// loadCSS("app/custom-style.css");
+
 loadJS(app.pathJSAPI + 'init.js', true);
 loadJS('app/config.js');
 
