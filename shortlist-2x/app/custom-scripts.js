@@ -6,6 +6,7 @@ define(["dojo/topic"], function(topic) {
     // https://developers.arcgis.com/javascript/3/jsapi/esri.request-amd.html
     require(["esri/request"], function(esriRequest) {
             'use strict';
+
             // function to get legend info in json format
             function requestLegendJson(url) {
                 // request object
@@ -75,14 +76,14 @@ define(["dojo/topic"], function(topic) {
                     console.warn("Error: ", error.message);
                     // feel free to update error reporting code
                 });
-            } // end requestLegendJson(url)            
-        
+            } // end requestLegendJson(url)
+
             // Map Service Legend Urls
             var municipalBoundaryLegendUrl = 'https://gis.ccpa.net/arcgiswebadaptor/rest/services/ArcGIS_Online/MunicipalBoundaries/MapServer/legend';
             var waterTrailsLegendUrl = 'https://gis.ccpa.net/arcgiswebadaptor/rest/services/ArcGIS_Online/WaterTrailsData/MapServer/legend';
             // fake url to see how error function is called
             var fakeLegendUrl = 'http://server.arcgisonline.com/arcgis/rest/services/Demographics/Living Index/MapServer/legend';
-                        
+
             // call functions to get legend JSON and construct legend elements       
             requestLegendJson(municipalBoundaryLegendUrl);
             requestLegendJson(waterTrailsLegendUrl);
@@ -108,7 +109,7 @@ define(["dojo/topic"], function(topic) {
         // Last Data Update Text
         const lastDataUpdateDate = '8-30-2018' // update text to last data update date
         // Element that will contain the last data update text
-        const dataUpdateText = `<span id="dataUpdate">Data Last Updated: ${lastDataUpdateDate}</span>`;
+        const dataUpdateText = '<span id="dataUpdate">Data Last Updated:' + lastDataUpdateDate + '</span>';
         // Mobile title page element
         const ccpaMobileTitlePage = $('#mobileIntro');
         // Header Element
