@@ -4,6 +4,8 @@ define(["dojo/topic"], function(topic) {
 	*/
     // use esri request module to fetch map service legend info
     // https://developers.arcgis.com/javascript/3/jsapi/esri.request-amd.html
+    // some of the code within here is not compatible with IE 11
+    // please see the custom-scripts-ie-11.js file for compatible code
     require(["esri/request"], function(esriRequest) {
             // function to get legend info in json format
             function requestLegendJson(url) {
