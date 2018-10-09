@@ -109,7 +109,7 @@ define(["dojo/topic"], function(topic) {
         // Last Data Update Text
         const lastDataUpdateDate = '8-30-2018' // update text to last data update date
         // Element that will contain the last data update text
-        const dataUpdateText = `<span id="dataUpdate">Data Last Updated: ${lastDataUpdateDate}</span>`;
+        const dataUpdateText = '<span id="dataUpdate">Data Last Updated: ' + lastDataUpdateDate + '</span>';
         // Mobile title page element
         const ccpaMobileTitlePage = $('#mobileIntro');
         // Header Element
