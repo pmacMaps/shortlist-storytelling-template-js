@@ -11,4 +11,6 @@ Below is a listing of the customizations I have made:
 - Add the text "More Tabs" to the tab that represents more tabs
 - A map/app loading message for desktop and mobile versions of the app (v 1.4.9).
 
-Detailed descriptions of the customizations will be added to the [**Wiki**](https://github.com/pmacMaps/shortlist-storytelling-template-js/wiki) page in the near future.
+### Note
+
+As Shortlist is considered a "Classic StoryMap," and Esri's development is focused on the "new" StoryMaps platform, I'm archiving this repo.   If you are still deploying the Classic Shortlist app, hopefully some of my enhancements will prove useful to you.
